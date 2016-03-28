@@ -9,6 +9,7 @@
   		[org.clojure/java.jdbc "0.5.0"]
   		[mysql/mysql-connector-java "5.1.38"]
   		[org.antlr/ST4 "4.0.8"];; string template
+  		[lock-key "1.4.1"]
   		 ]
   :main http-test.core
   )
