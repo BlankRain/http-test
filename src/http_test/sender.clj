@@ -22,3 +22,12 @@
  hello :n
 </xml>
    "   (into {} m)))
+
+
+(defn base64-encode [^String  x]
+	(.encodeToString   (java.util.Base64/getEncoder)   (.getBytes x  "utf8"))
+	)
+
+(defn base64-decode  [^String x]
+	(String. (.decode  (java.util.Base64/getDecoder)  (.getBytes x "utf8"))  "utf8")
+	)
